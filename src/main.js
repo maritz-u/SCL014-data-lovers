@@ -1,6 +1,18 @@
-import { example } from './data.js';
-// import data from './data/atletas/atletas.js';
-// import data from './data/lol/lol.js';
-import data from './data/pokemon/pokemon.js';
+import data from "./data/pokemon/pokemon.js";
 
-console.log(example, data);
+// console.log(data);
+
+const move = (close, open) => {
+  document.getElementById(close).style.display = "none";
+  document.getElementById(open).style.display = "block";
+};
+
+const btn = document.getElementById("btn");
+btn.addEventListener("click", () => {
+  move("container", "showResult");
+});
+
+const btnForo = document.getElementById("btnForo");
+btnForo.addEventListener("click", () => {
+  move("container", "showResult");
+});

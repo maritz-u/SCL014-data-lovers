@@ -1,12 +1,67 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Data Lovers</title>
+</head>
+
+<body>
+
+  <div id="root" class="root">
+
+    <!-- header es la cabecera del conteiner -->
+    <header>
+      <img src="./img/pokelogo (2).png " alt="Logo-Pokemon">
+    </header>
+
+    <div id="container">
+      <!-- section es el contenido del container -->
+      <section id="content">
+
+        <h1> <strong>El universo Pokémon</strong> </h1>
+        <br><br>
+        <p>
+          Es uno de los más grandes y populares universos de cuantos se han creado en la historia de los videojuegos.
+          En esta página te entregaremos una guía visible sobre la generación Kanto. Vamos a explicarte qué son los
+          Pokémon y cómo se clasifican.
+          Te mostraremos además todos los que puedes salir a atrapar en este juego para completar la Pokédex.</p>
+        <br><br>
+        <img src="./img/pokemon.jpg" class="gif" alt=" Imagen-Pokemones">
+      </section>
+
+      <!-- aside es una caja, contiene los botones-->
+      <aside>
+        <button id="btn" class="btn">CartaDex</button>
+
+        <button id="btnForo" class="btn">Foros</button>
+      </aside>
+
+    </div>
+
+    <!-- segunda pantalla -->
+    <div id="showResult" class="showResult">
+      ¡Pronto podrás elegir tu Pokemon!
+    </div>
+
+
+    <!-- pie de pagina, final del container(div) -->
+    <div class=clearfix>
+      <footer>
+        <br>
+        <img src="./img/image 4.png" alt="" class="pokebola"> &copy;2020 Desarrollado por Maritzu Zuñiga y Fabiane
+        Santos <img src="./img/image 4.png" alt="" class="pokebola">
+      </footer>
+    </div>
+
+  </div>
+
+  <script src="main.js" type="module"></script>
+
+</body>
+
 </html>
