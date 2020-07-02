@@ -8,13 +8,17 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-img {
-  width: 1280px;
-  height: 150px;
+header {
+  background-color: #f94144;
 }
+
 .gif {
-  width: 1000px;
-  height: 350px;
+  width: 100%;
+}
+
+.contenedorimagen {
+  width: 50%;
+  margin: 0 auto;
 }
 
 .btn {
@@ -32,14 +36,13 @@ img {
 }
 
 #container {
-  width: 1000px;
+  width: 80%;
   margin: 0px auto;
 }
 
 #content {
-  float: left;
   width: 100%;
-  min-height: 500px;
+  min-height: 360px;
   color: white;
   margin-top: 30px;
   margin-bottom: 15px;
@@ -61,18 +64,11 @@ p {
 
 aside {
   margin: 25px auto;
-
-  min-height: 300px;
   text-align: center;
 }
 
 .showResult {
   display: none;
-}
-
-/* clearfix sirve para que el contenido no suba a la linea */
-.clearfix {
-  clear: both;
 }
 
 footer {
@@ -81,6 +77,8 @@ footer {
   color: white;
   text-align: center;
   height: 50px;
+  position: relative;
+  bottom: 0;
 }
 .pokebola {
   width: 50px;
@@ -88,8 +86,12 @@ footer {
 }
 
 @media (max-width:1024px) {
-header , .container , footer {
-  width: 100%;
-}
+  header , #container , footer, #content {
+    width: 100%;
+  }
+  .btn { 
+    width: 50%;
+    margin:15px;
+  }
 
 }
