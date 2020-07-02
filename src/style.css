@@ -100,5 +100,8 @@ footer {
     width: 50%;
     margin:15px;
   }
-
+  .encabezado img {
+    width: 300px;
+    margin: 0px 40px;
+  }
 }
