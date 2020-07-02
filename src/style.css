@@ -104,4 +104,7 @@ footer {
     width: 300px;
     margin: 0px 40px;
   }
+  .pokebola {
+    display: none;
+  }
 }
