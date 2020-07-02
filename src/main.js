@@ -16,3 +16,9 @@ const btnForo = document.getElementById("btnForo");
 btnForo.addEventListener("click", () => {
   move("container", "showResult");
 });
+
+
+const btnVolver = document.getElementById("btnCerrar");
+btnVolver.addEventListener("click", () => {
+  move("showResult", "container");
+});
