@@ -8,8 +8,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
+.encabezado{
   background-color: #f94144;
+  height: 100px;
+}
+
+.encabezado img {
+  width: 20%;
+  margin: 0px 80px;
 }
 
 .gif {
@@ -72,6 +78,7 @@ aside {
 }
 
 footer {
+  margin: 0px;
   width: 100%;
   background: #f94144;
   color: white;
