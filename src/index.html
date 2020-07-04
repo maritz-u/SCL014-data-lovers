@@ -13,7 +13,7 @@
 <body>
   <!-- header es la cabecera del conteiner -->
   <header class="encabezado">
-    <img src="/src/img/logo-poke (1).png" alt="Logo-Pokemon">
+    <img src="./img/logo-poke (1).png" alt="Logo-Pokemon">
   </header>
 
   <div id="container">
@@ -26,31 +26,39 @@
         En esta página te entregaremos una guía visible sobre la generación Kanto. Vamos a explicarte qué son los
         Pokémon y cómo se clasifican.
         Te mostraremos además todos los que puedes salir a atrapar en este juego para completar la Pokédex.</p>
-      
+
+      <aside>
+        <!-- <a href="" id="btn" onclick="move('container', 'showResult')"> <img src="./img/pokeball.png" style="width:100px" alt="" title="CartaDex"></a> -->
+        <button id="btn" class="btn">CartaDex</button>
+        <button id="btnForo" class="btn">Foros</button>
+      </aside>
+
       <div class="contenedorimagen">
-        <img src="/src/img/pokemon.jpg" class="gif" alt=" Imagen-Pokemones">
+        <img src="./img/pokemon.jpg" class="gif" alt=" Imagen-Pokemones">
       </div>
-      </section>
+    </section>
 
     <!-- aside es una caja, contiene los botones-->
-    <aside>
-      <button id="btn" class="btn">CartaDex</button>
-      <button id="btnForo" class="btn">Foros</button>
-    </aside>
+
 
   </div>
 
   <!-- segunda pantalla -->
   <div id="showResult" class="showResult">
-    ¡Pronto podrás elegir tu Pokemon!
-    <button id="btnCerrar" class="btn">Volver</button>
+    <button id="btnCerrar" class="btn btnCerrar">Volver</button>
+    <!-- <h2>¡Pronto podrás elegir tu Pokemon! </h2> -->
+    <div id="pokemones" class="card"></div>
+
+  </div>
+  <div id="foro">
+    ¡Pronto más informaciones!
   </div>
 
 
   <!-- pie de pagina, final del container(div) -->
   <footer>
-    <img src="/src/img/image 4.png" alt="" class="pokebola"> &copy;2020 Desarrollado por Maritzu Zuñiga y Fabiane
-    Santos <img src="/src/img/image 4.png" alt="" class="pokebola">
+    <img src="./img/image 4.png" alt="" class="pokebola"> &copy;2020 Desarrollado por Maritzu Zuñiga y Fabiane
+    Santos <img src="./img/image 4.png" alt="" class="pokebola">
   </footer>
 
   <script src="main.js" type="module"></script>
