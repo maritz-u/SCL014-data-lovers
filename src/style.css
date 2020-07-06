@@ -43,6 +43,11 @@ body {
   border: 8px black;
 }
 
+/* pseudoclase que cambia el color al mover el ratón */
+.btn:hover {
+  background-color: lightblue;
+}
+
 .btnCerrar {
   margin: 30px 20px;
 }
@@ -81,26 +86,58 @@ aside {
   text-align: center;
 }
 
-.showResult {
+.showResult,
+.foro {
   display: none;
 }
 
-.card h2 {
-  text-align: center;
-  margin: 0 500px;
+/* caja contenedora de todas las cartas pokemones , con flexbox*/
+.pokemones {
+  background-color: tomato;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
+/* cartas pokemones */
+.card {
+  background-color: rgb(189, 243, 225);
+  margin-bottom: 30px;
+  width: 23%;
+  flex: none;
+  justify-content: center;
+  align-items: center;
+  border: 5px white dashed;
+  border-radius: 5px;
+}
+
+/* pseudoclase que cambia el color al hacer click en las cartas */
+.card:hover {
+  background-color: lightpink;
+}
+
+/* pseudoclase que cambia el primer párrafo dentro del div card*/
+.card p:first-child {
+  color: rgb(226, 69, 90);
+  font-size: 25px;
+  font: inherit;
+  font-family: "Noto Sans", sans-serif;
+}
+
+/* estilo para párrafos de las cartas */
 .card p {
-  padding: 0 0 0 0;
-  color: purple;
-  font-size: 20px;
+  padding: 20px 0 0 0;
+  color: rgb(248, 8, 196);
+  font-size: 15px;
+  font-family: "Noto Sans", sans-serif;
   text-align: center;
 }
-/* .card{
-display:flex;
-justify-content:space-between;
-justify-content: flex-start;
-} */
+
+/* las informaciones de la carta quedan ocultas, pero al hacer click se muestra en pantalla */
+.desaparece {
+  display: none;
+}
 
 footer {
   margin: 0px;
@@ -137,11 +174,17 @@ footer {
   }
 }
 
+/* media query para celulares */
 @media (max-width: 790px) {
   .encabezado img {
     padding: 0px 20px;
   }
   .contenedorimagen {
     margin: 0 60px;
+  }
+
+  .card {
+    flex-direction: column;
+    width: 100%;
   }
 }
