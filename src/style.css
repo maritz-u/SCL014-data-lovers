@@ -102,23 +102,34 @@ aside {
 
 /* cartas pokemones */
 .card {
-  background-color: rgb(189, 243, 225);
-  margin-bottom: 30px;
-  width: 23%;
-  flex: none;
-  justify-content: center;
-  align-items: center;
-  border: 5px white dashed;
-  border-radius: 5px;
+  position: relative;
+  transition: 0.3s ease all;
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
 }
 
 /* pseudoclase que cambia el color al hacer click en las cartas */
 .card:hover {
   background-color: lightpink;
+  transform: rotateY(180deg);
+}
+
+.card > div {
+  background-color: rgb(189, 243, 225);
+  margin-bottom: 30px;
+  padding: 5px;
+  width: 85%;
+  /* flex: none; */
+  justify-content: space-between;
+  /* flex-direction: column; */
+  align-items: center;
+  border: 5px white dashed;
+  border-radius: 5px;
 }
 
 /* pseudoclase que cambia el primer párrafo dentro del div card*/
-.card p:first-child {
+.card .frente p:first-child {
   color: rgb(226, 69, 90);
   font-size: 25px;
   font: inherit;
@@ -135,7 +146,7 @@ aside {
 }
 
 /* las informaciones de la carta quedan ocultas, pero al hacer click se muestra en pantalla */
-.desaparece {
+.card .reverso {
   display: none;
 }
 
@@ -188,3 +199,5 @@ footer {
     width: 100%;
   }
 }
+
+
