@@ -4,12 +4,12 @@
 }
 
 body {
-  background-color: #faeed2;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color:#fff;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .encabezado {
-  background-color: #f94144;
+  background-color: #dbdbdb;
   height: 100px;
 }
 
@@ -21,6 +21,9 @@ body {
 
 .contenedor-logo {
     float: left;
+  }
+  .logo:hover:first-child{
+    background-color: #f94144;
   }
 
 .encabezado .logo {
@@ -38,12 +41,12 @@ body {
 
 .contenedorimagen {
   width: 50%;
-  display: flex;
+  margin: 0 auto;
 }
 
 .gif {
   width: 100%;
-  flex: 1;
+  
 
 }
 
@@ -51,10 +54,9 @@ body {
   text-decoration: none;
   padding: 20px;
   margin: -10px 50px;
-  font-family: helvetica;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
   font-size: 25px;
-  font-style: italic;
   color: #fff;
   background-color: #f8a426;
   border-radius: 15px;
@@ -88,15 +90,13 @@ body {
 h1 {
   font-size: 50px;
   text-align: center;
-  color: black;
-  /*color: rgb(29, 160, 149);/*
+  color: rgb(65, 65, 65);
   /* margin: 40px; */
 }
 
 p {
   padding: 40px;
   color: rgb(105, 102, 102);
-  font-family: "Noto Sans", sans-serif;
   font-size: 20px;
 }
 
@@ -112,7 +112,7 @@ aside {
 
 /* caja contenedora de todas las cartas pokemones , con flexbox*/
 .pokemones {
-  background-color: tomato;
+  /* background-color: tomato; */
   margin: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -126,19 +126,24 @@ aside {
   transform: rotateY(0deg);
   transform-style: preserve-3d;
   backface-visibility: hidden;
-  background-color: rgb(189, 243, 225);
-    margin-bottom: 30px;
-    width: 23%;
-    flex: none;
-    justify-content: center;
-    align-items: center;
-    border: 5px white dashed;
-    border-radius: 5px;
+ 
   }
 
 
 .card > div {
 
+  background-color: rgb(165, 217, 241);
+  margin-bottom: 30px;
+  padding: 25px;
+  width: 70%;
+  flex: none;
+  /*justify-content: space-between;*/
+  justify-content: space-evenly;
+  /* flex-direction: column; */
+  align-items: center;
+  border: 5px white solid;
+  border-radius: 20px;
+/* 
   background-color: rgb(189, 243, 225);
   margin-bottom: 30px;
   width: 23%;
@@ -150,7 +155,7 @@ aside {
   transition: 0.3s ease all;
   transform: rotateY(0deg);
   transform-style: preserve-3d;
-  backface-visibility: hidden;
+  backface-visibility: hidden; */
 }
 
 /* pseudoclase que cambia el color al hacer click en las cartas */
@@ -161,10 +166,9 @@ aside {
 
 /* pseudoclase que cambia el primer párrafo dentro del div card*/
 .card .frente p:first-child {
-  color: rgb(226, 69, 90);
+  color:rgb(105, 102, 102);
   font-size: 25px;
-  font: inherit;
-  font-family: "Noto Sans", sans-serif;
+  
 }
 
 /* estilo para párrafos de las cartas */
@@ -172,13 +176,17 @@ aside {
   padding: 20px 0 0 0;
   color: rgb(248, 8, 196);
   font-size: 15px;
-  font-family: "Noto Sans", sans-serif;
   text-align: center;
 }
 
 /* las informaciones de la carta quedan ocultas, pero al hacer click se muestra en pantalla */
 .card .reverso {
-  display: none;
+  /*display: none;*/
+  position: absolute;
+  top: 0;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+
 }
 
 .showResult {
@@ -193,8 +201,8 @@ aside {
 footer {
   margin: 0px;
   width: 100%;
-  background: #f94144;
-  color: white;
+  background: #dbdbdb;
+  color: rgb(105, 102, 102);
   text-align: center;
   height: 50px;
   position: relative;
@@ -237,3 +245,11 @@ footer {
 }
 
 
+/* background-color: rgb(189, 243, 225);
+margin-bottom: 30px;
+width: 23%;
+flex: none;
+justify-content: center;
+align-items: center;
+border: 5px white dashed;
+border-radius: 5px; */
