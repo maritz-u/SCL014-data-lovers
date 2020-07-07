@@ -4,8 +4,8 @@
 }
 
 body {
-  background-color:#fff;
-  font-family: 'Ubuntu', sans-serif;
+  background-color: #fff;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .encabezado {
@@ -17,27 +17,22 @@ body {
   width: 80%;
   height: 100px;
   padding: 0px 80px;
-  }
+}
 
 .contenedor-logo {
-    float: left;
-  }
-  .logo:hover:first-child{
-    background-color: #f94144;
-  }
+  float: left;
+}
 
 .encabezado .logo {
-
   width: 55px;
   height: 30px;
   margin: 30px 30px;
   padding: 0px;
+}
 
-  }
-
- .contenedor-menu {
+.contenedor-menu {
   float: right;
- } 
+}
 
 .contenedorimagen {
   width: 50%;
@@ -46,15 +41,12 @@ body {
 
 .gif {
   width: 100%;
-  
-
 }
 
 .btn {
   text-decoration: none;
   padding: 20px;
   margin: -10px 50px;
-  font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
   font-size: 25px;
   color: #fff;
@@ -95,7 +87,7 @@ h1 {
 }
 
 p {
-  padding: 40px;
+  padding: 30px;
   color: rgb(105, 102, 102);
   font-size: 20px;
 }
@@ -112,8 +104,7 @@ aside {
 
 /* caja contenedora de todas las cartas pokemones , con flexbox*/
 .pokemones {
-  /* background-color: tomato; */
-  margin: 20px;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -121,41 +112,22 @@ aside {
 
 /* cartas pokemones */
 .card {
+  width: 20%;
+  margin-bottom: 40px;
+  padding: 25px;
+  flex: none;
   position: relative;
   transition: 0.3s ease all;
   transform: rotateY(0deg);
   transform-style: preserve-3d;
   backface-visibility: hidden;
- 
-  }
-
+}
 
 .card > div {
-
   background-color: rgb(165, 217, 241);
-  margin-bottom: 30px;
-  padding: 25px;
-  width: 70%;
-  flex: none;
-  /*justify-content: space-between;*/
-  justify-content: space-evenly;
-  /* flex-direction: column; */
   align-items: center;
   border: 5px white solid;
   border-radius: 20px;
-/* 
-  background-color: rgb(189, 243, 225);
-  margin-bottom: 30px;
-  width: 23%;
-  flex: none;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  position: relative;
-  transition: 0.3s ease all;
-  transform: rotateY(0deg);
-  transform-style: preserve-3d;
-  backface-visibility: hidden; */
 }
 
 /* pseudoclase que cambia el color al hacer click en las cartas */
@@ -166,27 +138,24 @@ aside {
 
 /* pseudoclase que cambia el primer párrafo dentro del div card*/
 .card .frente p:first-child {
-  color:rgb(105, 102, 102);
+  color: rgb(105, 102, 102);
   font-size: 25px;
-  
 }
 
 /* estilo para párrafos de las cartas */
 .card p {
   padding: 20px 0 0 0;
-  color: rgb(248, 8, 196);
+  color: rgb(105, 102, 102);
   font-size: 15px;
   text-align: center;
 }
 
 /* las informaciones de la carta quedan ocultas, pero al hacer click se muestra en pantalla */
 .card .reverso {
-  /*display: none;*/
   position: absolute;
   top: 0;
   transform: rotateY(180deg);
   backface-visibility: hidden;
-
 }
 
 .showResult {
@@ -207,6 +176,7 @@ footer {
   height: 50px;
   position: relative;
   bottom: 0;
+  padding-top: 15px;
 }
 .pokebola {
   width: 50px;
@@ -214,10 +184,7 @@ footer {
 }
 
 @media (max-width: 1024px) {
-  header,
-  #container,
-  footer,
-  #content {
+  header, #container, footer, #content {
     width: 100%;
   }
   .btn {
@@ -238,18 +205,9 @@ footer {
   .encabezado img {
     padding: 0px 20px;
   }
+  
   .card {
     flex-direction: column;
-    width: 100%;
+    width: 80%;
   }
 }
-
-
-/* background-color: rgb(189, 243, 225);
-margin-bottom: 30px;
-width: 23%;
-flex: none;
-justify-content: center;
-align-items: center;
-border: 5px white dashed;
-border-radius: 5px; */
