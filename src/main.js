@@ -46,7 +46,7 @@ pokemonList.forEach(elem => {
   // pokemom.innerHTML += 'Nombre: '+ elem.name;
   pokeCard.innerHTML += `
   <div id="card" class=" card">
-    <div id="frente" class="frente">
+    <div id="" class="frente">
       <p> ${elem.name.toUpperCase()}</p>
        <p> <img src=" ${elem.img}"> </p>
     </div>
@@ -63,27 +63,3 @@ pokemonList.forEach(elem => {
 `;
 });
 
-
-
-
-/* función que captura el id'card', y cuan do se haceclick en la carta pokemon, nos muestra las informaciones ocultas */
-// let btnChange = document.getElementById("card");
-// btnChange.addEventListener("click", () => {
-//   // pokemonList.forEach(elem => {
-//   // if (elem){
-//   move("uno", "a");
-//   move("uno", "b");
-//   move("uno", "c");
-//   move("uno", "d");
-//   move("uno", "e");
-
-//   // }
-//   // }
-// });
-
-
-// let bla = document.getElementsByClassName('desaparece');
-// btnChange.addEventListener("click", () => {
-// bla.forEach(elem=>{
-// bla.classList.toggle('desaparece');
-// })
