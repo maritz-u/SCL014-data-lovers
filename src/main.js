@@ -39,39 +39,51 @@ let pokemonList = data.pokemon;
    metodo forEach, donde tenemos acceso al array de la propiedad pokemon, que por su vez, es compuesto por varios objetos.
   Html dinamico, donde las comillas invertidas  delimitan las cadenas y con el ${} obtenemos el valor de la propiedad solicitada.
   Se agrega clase 'card' para estilo con flexbox.
-  Se agrega clase 'desaparece' para dejar oculta algunas informaciones de los pokemones*/
+  Se agrega clase 'desaparece' para dejar oculta algunas informaciones de los pokemones */
 
 let pokeCard = document.getElementById("pokemones");
 pokemonList.forEach(elem => {
   // pokemom.innerHTML += 'Nombre: '+ elem.name;
   pokeCard.innerHTML += `
   <div id="card" class=" card">
-  <div id="uno">
-<p class="uno"> ${elem.name.toUpperCase()}</p>
-<p class="uno"> <img src=" ${elem.img}"> </p>
-</div>
-<p id="a" class="desaparece">${elem.about} </p> 
-<p id="b" class="desaparece"> Numero: ${elem.num}</p>
-<p id="c" class="desaparece"> Tipo: ${elem.type} </p>
-<p id="d" class="desaparece"> Fortalezas: ${elem.resistant} </p>
-<p id="e" class="desaparece"> Debilidades: ${elem.weaknesses} </p>
-</div>
+    <div id="frente" class="frente">
+      <p> ${elem.name.toUpperCase()}</p>
+       <p> <img src=" ${elem.img}"> </p>
+    </div>
+
+    <div id = "reverso" class=" reverso">
+      <p> ${elem.about} </p> 
+      <p> Numero: ${elem.num}</p>
+      <p> Tipo: ${elem.type} </p>
+      <p> Fortalezas: ${elem.resistant} </p>
+      <p>  Debilidades: ${elem.weaknesses} </p>
+    </div>
+  </div>
 
 `;
 });
 
-/* función que captura el id'card', y cuan do se haceclick en la carta pokemon, nos muestra las informaciones ocultas*/
-let btnChange = document.getElementById("card");
-btnChange.addEventListener("click", () => {
-  // pokemonList.forEach(elem => {
-  // if (elem){
 
-  move("uno", "a");
-  move("uno", "b");
-  move("uno", "c");
-  move("uno", "d");
-  move("uno", "e");
 
-  // }
-  // }
-});
+
+/* función que captura el id'card', y cuan do se haceclick en la carta pokemon, nos muestra las informaciones ocultas */
+// let btnChange = document.getElementById("card");
+// btnChange.addEventListener("click", () => {
+//   // pokemonList.forEach(elem => {
+//   // if (elem){
+//   move("uno", "a");
+//   move("uno", "b");
+//   move("uno", "c");
+//   move("uno", "d");
+//   move("uno", "e");
+
+//   // }
+//   // }
+// });
+
+
+// let bla = document.getElementsByClassName('desaparece');
+// btnChange.addEventListener("click", () => {
+// bla.forEach(elem=>{
+// bla.classList.toggle('desaparece');
+// })
