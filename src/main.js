@@ -1,5 +1,7 @@
 import data from "./data/pokemon/pokemon.js";
 
+
+
 console.log(data);
 
 // función que simula el cambio de pantalla
