@@ -55,12 +55,14 @@ margin-top: -100px;
   /* display: flex;
   justify-content: flex-start; */
   margin: 50px;
-
- 
 }
 ::placeholder {
   color: #386ccc;
-  padding: 5px:;
+  padding: 5px;
+}
+
+#contenedor-filtros {
+  text-align: center;
 }
 
 .btn {
