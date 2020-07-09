@@ -14,7 +14,7 @@
   <!-- header es la cabecera del conteiner -->
   <header class="encabezado">
     <div class="contenedor-logo">
-      <img src="./img/Frame 7.png" alt="Logo-Pokemon">
+      <img src="./img/logo-pokemon.png" alt="Logo-Pokemon">
       <!-- <img src="./img/logo-poke (1).png" alt="Logo-Pokemon"> -->
     </div>
     <div class="contenedor-menu">
@@ -37,15 +37,14 @@
         Te mostraremos además todos los que puedes salir a atrapar en este juego para completar la Pokédex.</p>
 
       <div class="contenedorimagen">
-        <img src="./img/img-pokemon.png" class="gif" alt="Imagen-Pokemones">
+        <img src="./img/imagen-pokemon.png" class="gif" alt="Imagen-Pokemones">
 
-        <!-- <img src="./img/Frame 4.png" class="gif" alt=" Imagen-Pokemones"> -->
-        <!----  <img src="./img/pokemones1.0.png" class="gif" alt=" pokemon"> -->
+    
 
       </div>
       <!-- aside es una caja, contiene los botones-->
       <aside>
-        <!-- <a href="" id="btn" onclick="move('container', 'showResult')"> <img src="./img/pokeball.png" style="width:100px" alt="" title="CartaDex"></a> -->
+       
         <button id="btn" class="btn">CartaDex</button>
         <!-- <a  href="#" id="btn"  > <img src="./img/pokeball.png " alt="" title="CartaDex"> Poke</a> -->
 
@@ -57,40 +56,62 @@
 
   <!-- segunda pantalla -->
   <div id="showResult" class="showResult">
-<div id="contenedor-filtros">
-    <select name="" class="box">
-      <option value="all">Filtrar Pokémon</option>
 
-      <option class="box">A-Z</option>
 
-      <option class="box">Z-A</option>
+    <div id="contenedorFiltros">
+      
 
-      <option class="box">Generación</option>
+    <select id="generation" class="box">
+      <option value="all">Filtrar Pokémon Generación</option>
+      <option value="kanto">Kanto</option>
+      <option value="johto"> Johto</option>
+    </select>
 
-      <option class="box">Tipo</option>
 
-      <option class="box">Fortaleza</option>
+    <select id="tipo" class="box">
+      <option value="all">Tipos de Pokémon</option>
+      <option value="Water">Agua</option>
+      <option value="Bug">Bicho</option>
+      <option value="Dragon">Dragón</option>
+      <option value="Electric">Eléctrico</option>
+      <option value="Ghost">Fantasma</option>
+      <option value="Fire">Fuego</option>
+      <option value="Ice">Hielo</option>
+      <option value="Fighting">Lucha</option>
+      <option value="Normal">Normal</option>
+      <option value="Grass">Planta</option>
+      <option value="Psychic">Psíquico</option>
+      <option value="Rock">Roca</option>
+      <option value="Ground">Tierra</option>
+      <option value="Poison">Veneno</option>
+      <option value="Flying">Volador</option>
+    </select>
 
-      <option class="box">Debilidad</option>
-
+    <select id="order" class="box">
+      <option value="all">Ordenar Pokémon</option>
+      <option value="A-Z">A-Z</option>
+      <option value="Z-A">Z-A</option>
     </select>
 
 
     <!-- Buscar por nombre o numero de pokemon -->
-    <input type="text" placeholder="nombre/num Pokemon" class="box">
-    <button id="btn" class="btn">Buscar</button>
+    <input type="text" placeholder="nombre/num Pokemon" class="box" id="box">
+    <button id="btnBuscar" class="btn">Buscar</button>
 
     <button id="btnCerrar" class="btn btnCerrar">Volver</button>
-  </div>
-    <!-- <h2>¡Pronto podrás elegir tu Pokemon! </h2> -->
+
+
     <div id="pokemones" class="pokemones"></div>
+    <div id="contenedorPokemonName"></div>
+
+  </div>
+  </div>
   </div>
 
   <!-- pie de pagina, final del container(div) -->
   <footer>
-    <!-- <img src="./img/image 4.png" alt="" class="pokebola"> -->&copy;2020 Desarrollado por Maritzu Zuñiga y Fabiane
-    Santos
-    <!-- <img src="./img/image 4.png" alt="" class="pokebola"> -->
+    &copy;2020 Desarrollado por Maritzu Zuñiga y Fabiane Santos
+
   </footer>
 
   <script src="main.js" type="module"></script>

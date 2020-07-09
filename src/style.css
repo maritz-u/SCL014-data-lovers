@@ -9,26 +9,24 @@ body {
 }
 
 .encabezado {
-  background-color: #dbdbdb;
+  background-color: rgb(127, 248, 202);
   height: 100px;
 }
 
 .encabezado img {
- 
   height: 100px;
   padding: 0px 80px;
 }
 
-
 .encabezado .logo {
   width: 40px;
   height: 100%;
-  margin: 30px ;
+  margin: 30px;
   padding: 0px;
 }
 
 .contenedor-menu {
-margin-top: -100px;
+  margin-top: -100px;
   /* margin-right: auto; */
   float: right;
   /* width: auto;
@@ -46,7 +44,7 @@ margin-top: -100px;
 
 .box {
   color: #386ccc;
-  background:  #fff;
+  background: #fff;
   border-radius: 20px;
   padding: 10px;
   /* padding-left: 50px;
@@ -72,7 +70,7 @@ margin-top: -100px;
   font-weight: 300;
   font-size: 25px;
   color: #fff;
-  background-color: #386ccc;
+  background-color: #106ecc;
   border-radius: 15px;
   border: 8px black;
 }
@@ -98,7 +96,7 @@ margin-top: -100px;
   margin-top: 30px;
   margin-bottom: 15px;
   padding-bottom: 10px;
-  text-align: left;
+  text-align: justify;
 }
 
 h1 {
@@ -111,7 +109,7 @@ h1 {
 p {
   padding: 30px;
   color: rgb(105, 102, 102);
-  font-size: 20px;
+  font-size: 22px;
 }
 
 aside {
@@ -143,10 +141,10 @@ aside {
   transform: rotateY(0deg);
   transform-style: preserve-3d;
   backface-visibility: hidden;
+  height: 250px;
 }
 
 .card > div {
-
   background-color: rgb(165, 217, 241);
   align-items: center;
   border: 5px white solid;
@@ -168,7 +166,7 @@ aside {
 /* estilo para párrafos de las cartas */
 .card p {
   padding: 20px 0 0 0;
-  color: #386ccc;
+  color: #fff;
   font-size: 15px;
   text-align: center;
 }
@@ -179,6 +177,7 @@ aside {
   top: 0;
   transform: rotateY(180deg);
   backface-visibility: hidden;
+  /* min-height:200px; */
 }
 
 .showResult {
@@ -193,7 +192,7 @@ aside {
 footer {
   margin: 0px;
   width: 100%;
-  background: #dbdbdb;
+  background: rgb(127, 248, 202);
   color: rgb(105, 102, 102);
   text-align: center;
   height: 50px;
@@ -201,13 +200,13 @@ footer {
   bottom: 0;
   padding-top: 15px;
 }
-.pokebola {
-  width: 50px;
-  height: 30px;
-}
 
-@media (max-width: 1024px) {
-  header, #container, footer, #content {
+/* media query para celulares */
+@media (min-width: 691px) and( max-width: 1024px) {
+  header,
+  #container,
+  footer,
+  #content {
     width: 100%;
   }
   .btn {
@@ -224,11 +223,11 @@ footer {
 }
 
 /* media query para celulares */
-@media (max-width: 790px) {
+@media (max-width: 690px) {
   .encabezado img {
     padding: 0px 20px;
   }
-  
+
   .card {
     flex-direction: column;
     width: 80%;
