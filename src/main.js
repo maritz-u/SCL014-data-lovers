@@ -1,4 +1,6 @@
 import data from "./data/pokemon/pokemon.js";
+import { filterByGeneration, filterByType, orderByName } from "./data.js";
+
 
 console.log(data);
 
@@ -70,33 +72,29 @@ containerGeneration.addEventListener("change", () => {
   displayPokemon(filterByGeneration(pokemonList, searchGeneration));
 });
 
-const filterByGeneration = (data, valor) => {
-  console.log(data, valor);
-  let filterPokemonByGeneration = pokemonList.filter(
-    generacion => generacion.generation.name === valor
-  );
-  console.log(filterPokemonByGeneration);
-
-  return filterPokemonByGeneration;
-  // console.log(pokeCard)
-};
-
 let searchType;
 const containerType = document.getElementById("tipo");
-console.log(containerType);
 containerType.addEventListener("change", () => {
-  pokeCard.innerHTML = "";
-
+  let closePokemones = document.getElementById("pokemones");
+  closePokemones.innerHTML = "";
   searchType = containerType.value;
+  
   console.log(searchType);
+
+  displayPokemon(filterByType(pokemonList, searchType));
 });
 
-let orderPokemon;
+let searchOrder;
 const containerOrder = document.getElementById("order");
 containerOrder.addEventListener("change", () => {
-  pokeCard.innerHTML = "";
-  orderPokemon = containerOrder.value;
-  console.log(containerOrder, orderPokemon);
+ let closePokemones = document.getElementById("pokemones");
+  closePokemones.innerHTML = "";
+  searchOrder = containerOrder.value;
+  
+  console.log(searchOrder);
+
+  orderByName(pokemonList, searchOrder);
+  displayPokemon(pokemonList);
 });
 
 const btnBuscar = document.getElementById("btnBuscar");
