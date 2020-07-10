@@ -39,12 +39,12 @@
       <div class="contenedorimagen">
         <img src="./img/imagen-pokemon.png" class="gif" alt="Imagen-Pokemones">
 
-    
+
 
       </div>
       <!-- aside es una caja, contiene los botones-->
       <aside>
-       
+
         <button id="btn" class="btn">CartaDex</button>
         <!-- <a  href="#" id="btn"  > <img src="./img/pokeball.png " alt="" title="CartaDex"> Poke</a> -->
 
@@ -57,61 +57,60 @@
   <!-- segunda pantalla -->
   <div id="showResult" class="showResult">
 
-
     <div id="contenedorFiltros">
-      
 
-    <select id="generation" class="box">
-      <option value="all">Filtrar Pokémon Generación</option>
-      <option value="kanto">Kanto</option>
-      <option value="johto"> Johto</option>
-    </select>
+      <!-- filtrar pokemon por generacion -->
+      <select id="generation" class="box">
+        <option value="all">Filtrar Pokémon Generación</option>
+        <option value="kanto">Kanto</option>
+        <option value="johto"> Johto</option>
+      </select>
 
+      <!-- filtrar pokemon por tipo -->
+      <select id="tipo" class="box">
+        <option value="all">Tipos de Pokémon</option>
+        <option value="Water">Agua</option>
+        <option value="Bug">Bicho</option>
+        <option value="Dragon">Dragón</option>
+        <option value="Electric">Eléctrico</option>
+        <option value="Ghost">Fantasma</option>
+        <option value="Fire">Fuego</option>
+        <option value="Ice">Hielo</option>
+        <option value="Fighting">Lucha</option>
+        <option value="Normal">Normal</option>
+        <option value="Grass">Planta</option>
+        <option value="Psychic">Psíquico</option>
+        <option value="Rock">Roca</option>
+        <option value="Ground">Tierra</option>
+        <option value="Poison">Veneno</option>
+        <option value="Flying">Volador</option>
+      </select>
 
-    <select id="tipo" class="box">
-      <option value="all">Tipos de Pokémon</option>
-      <option value="Water">Agua</option>
-      <option value="Bug">Bicho</option>
-      <option value="Dragon">Dragón</option>
-      <option value="Electric">Eléctrico</option>
-      <option value="Ghost">Fantasma</option>
-      <option value="Fire">Fuego</option>
-      <option value="Ice">Hielo</option>
-      <option value="Fighting">Lucha</option>
-      <option value="Normal">Normal</option>
-      <option value="Grass">Planta</option>
-      <option value="Psychic">Psíquico</option>
-      <option value="Rock">Roca</option>
-      <option value="Ground">Tierra</option>
-      <option value="Poison">Veneno</option>
-      <option value="Flying">Volador</option>
-    </select>
-
-    <select id="order" class="box">
-      <option value="all">Ordenar Pokémon</option>
-      <option value="A-Z">A-Z</option>
-      <option value="Z-A">Z-A</option>
-    </select>
-
-
-    <!-- Buscar por nombre o numero de pokemon -->
-    <input type="text" placeholder="nombre/num Pokemon" class="box" id="box">
-    <button id="btnBuscar" class="btn">Buscar</button>
-
-    <button id="btnCerrar" class="btn btnCerrar">Volver</button>
+      <!-- ordenar pokemon de A-Z o Z-A -->
+      <select id="order" class="box">
+        <option value="all">Ordenar Pokémon</option>
+        <option value="A-Z">A-Z</option>
+        <option value="Z-A">Z-A</option>
+      </select>
 
 
-    <div id="pokemones" class="pokemones"></div>
-    <div id="contenedorPokemonName"></div>
+      <!-- Buscar por nombre o numero de pokemon -->
 
-  </div>
+      <input type="search" placeholder="nombre/num Pokemon" class="box" id="box">
+      <button id="btnBuscar" class="btn">Buscar</button>
+
+      <button id="btnCerrar" class="btn btnCerrar">Volver</button>
+
+      <div id="pokemones" class="pokemones"></div>
+      <div id="contenedorPokemonName"></div>
+
+    </div>
   </div>
   </div>
 
   <!-- pie de pagina, final del container(div) -->
   <footer>
     &copy;2020 Desarrollado por Maritzu Zuñiga y Fabiane Santos
-
   </footer>
 
   <script src="main.js" type="module"></script>
