@@ -42,7 +42,7 @@ body {
   width: 100%;
 }
 
-.box {
+.control {
   color: #386ccc;
   background: #fff;
   border-radius: 20px;
@@ -52,15 +52,11 @@ body {
   border: 2px #09427a solid;
   /* display: flex;
   justify-content: flex-start; */
-  margin: 50px;
 }
+
 ::placeholder {
   color: #386ccc;
   padding: 5px;
-}
-
-#contenedor-filtros {
-  text-align: center;
 }
 
 .btn {
@@ -120,6 +116,11 @@ aside {
 .showResult,
 .foro {
   display: none;
+}
+
+#contenedorFiltros {
+  margin: 20px 0;
+  text-align: center;
 }
 
 /* caja contenedora de todas las cartas pokemones , con flexbox*/
@@ -202,34 +203,37 @@ footer {
 }
 
 /* media query para celulares */
-@media (min-width: 691px) and( max-width: 1024px) {
+@media (max-width: 691px) {
   header,
   #container,
   footer,
   #content {
     width: 100%;
   }
+  
+  .control,
   .btn {
-    width: 50%;
+    width: 60%;
     margin: 15px;
+    display: block;
+    margin: 5px auto;
+    padding: 20px 0;
   }
+
   .encabezado img {
     width: 300px;
-    padding: 0px 40px;
+    padding: 0px 20px;
   }
   .pokebola {
     display: none;
   }
-}
-
-/* media query para celulares */
-@media (max-width: 690px) {
-  .encabezado img {
-    padding: 0px 20px;
-  }
-
+  
   .card {
     flex-direction: column;
     width: 80%;
+  }
+  
+  .contenedor-menu {
+    display: none;
   }
 }
