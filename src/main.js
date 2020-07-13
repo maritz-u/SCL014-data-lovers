@@ -1,8 +1,11 @@
+/* eslint-disable max-len */
 import data from "./data/pokemon/pokemon.js";
-import { filterByGeneration, filterByType, orderByName } from "./data.js";
-
-
-console.log(data);
+import {
+  filterByGeneration,
+  filterByType,
+  orderByName,
+  searchByName
+} from "./data.js";
 
 // función que simula el cambio de pantalla
 const move = (close, open) => {
@@ -25,15 +28,8 @@ btnClose.addEventListener("click", () => {
 // variable que guarda la data pokemon
 const pokemonList = data.pokemon;
 
-// console.log(pokemonList[3].name);
-
-/* Captura del div vacio 'pokemones', donde se utiliza innerHTML para imprimir las informaciones  que fueron iteradas por el
-   metodo forEach, donde tenemos acceso al array de la propiedad pokemon, que por su vez, es compuesto por varios objetos.
-  Html dinamico, donde las comillas invertidas  delimitan las cadenas y con el ${} obtenemos el valor de la propiedad solicitada. */
-
-  //Se agrega clase 'card' para estilo con flexbox.
-  //Se agrega clase 'desaparece' para dejar oculta algunas informaciones de los pokemones 
-
+/* función para mostrar todos los pokemones, se utiliza innerHTML para imprimir en pantalla y
+ Html dinamico, para elegir informaciones desde la data. */
 const displayPokemon = pokemonData => {
   const pokeCard = document.getElementById("pokemones");
   pokemonData.forEach(elem => {
@@ -63,11 +59,9 @@ displayPokemon(pokemonList);
 let searchGeneration;
 const containerGeneration = document.getElementById("generation");
 containerGeneration.addEventListener("change", () => {
-  let closePokemones = document.getElementById("pokemones");
+  const closePokemones = document.getElementById("pokemones");
   closePokemones.innerHTML = "";
   searchGeneration = containerGeneration.value;
-
-  console.log(containerGeneration, searchGeneration);
 
   displayPokemon(filterByGeneration(pokemonList, searchGeneration));
 });
@@ -75,11 +69,9 @@ containerGeneration.addEventListener("change", () => {
 let searchType;
 const containerType = document.getElementById("tipo");
 containerType.addEventListener("change", () => {
-  let closePokemones = document.getElementById("pokemones");
+  const closePokemones = document.getElementById("pokemones");
   closePokemones.innerHTML = "";
   searchType = containerType.value;
-  
-  console.log(searchType);
 
   displayPokemon(filterByType(pokemonList, searchType));
 });
@@ -87,18 +79,20 @@ containerType.addEventListener("change", () => {
 let searchOrder;
 const containerOrder = document.getElementById("order");
 containerOrder.addEventListener("change", () => {
- let closePokemones = document.getElementById("pokemones");
+  const closePokemones = document.getElementById("pokemones");
   closePokemones.innerHTML = "";
   searchOrder = containerOrder.value;
-  
-  console.log(searchOrder);
 
   orderByName(pokemonList, searchOrder);
   displayPokemon(pokemonList);
 });
 
+let searchPokemon;
 const btnBuscar = document.getElementById("btnBuscar");
 btnBuscar.addEventListener("click", () => {
-  const searchPokemon = document.getElementById("box").value;
-  console.log(searchPokemon);
+  searchPokemon = document.getElementById("box").value;
+  const closePokemones = document.getElementById("pokemones");
+  closePokemones.innerHTML = "";
+
+  displayPokemon(searchByName(pokemonList, searchPokemon));
 });
