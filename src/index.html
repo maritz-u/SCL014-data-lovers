@@ -18,9 +18,9 @@
       <!-- <img src="./img/logo-poke (1).png" alt="Logo-Pokemon"> -->
     </div>
     <div class="contenedor-menu">
-      <a href="https://www.facebook.com/Pok%C3%A9mon-103682847702080/?brand_redir=230809307041021 " target="_blank"><img
+      <a href="https://www.facebook.com/Pok%C3%A9mon-103682847702080/?brand_redir=230809307041021" target="_blank"><img
           src="./img/logo-facebook.png" class="logo"></a>
-      <a href="https://www.instagram.com/pokemongochileoficial/?hl=pt " target="_blank"><img
+      <a href="https://www.instagram.com/pokemongochileoficial/?hl=pt" target="_blank"><img
           src="./img/logo-instagram.png" class="logo"></a>
     </div>
   </header>
@@ -61,14 +61,14 @@
     <div id="contenedorFiltros">
       
 
-    <select id="generation" class="box">
+    <select id="generation" class="control">
       <option value="all">Filtrar Pokémon Generación</option>
       <option value="kanto">Kanto</option>
       <option value="johto"> Johto</option>
     </select>
 
 
-    <select id="tipo" class="box">
+    <select id="tipo" class="control">
       <option value="all">Tipos de Pokémon</option>
       <option value="Water">Agua</option>
       <option value="Bug">Bicho</option>
@@ -87,7 +87,7 @@
       <option value="Flying">Volador</option>
     </select>
 
-    <select id="order" class="box">
+    <select id="order" class="control">
       <option value="all">Ordenar Pokémon</option>
       <option value="A-Z">A-Z</option>
       <option value="Z-A">Z-A</option>
@@ -95,12 +95,13 @@
 
 
     <!-- Buscar por nombre o numero de pokemon -->
-    <input type="text" placeholder="nombre/num Pokemon" class="box" id="box">
+    <input type="text" placeholder="nombre/num Pokemon" class="control" id="box">
     <button id="btnBuscar" class="btn">Buscar</button>
 
     <button id="btnCerrar" class="btn btnCerrar">Volver</button>
 
-
+  </div>
+  <div id="contenedorPokemones">
     <div id="pokemones" class="pokemones"></div>
     <div id="contenedorPokemonName"></div>
 
