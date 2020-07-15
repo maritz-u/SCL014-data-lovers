@@ -150,6 +150,10 @@ aside {
   align-items: center;
   border: 5px white solid;
   border-radius: 20px;
+  width: 300px;
+  height: 300px;
+  position: relative;
+
 }
 
 /* pseudoclase que cambia el color al hacer click en las cartas */
@@ -174,11 +178,12 @@ aside {
 
 /* las informaciones de la carta quedan ocultas, pero al hacer click se muestra en pantalla */
 .card .reverso {
-  position: absolute;
+ margin-top: -120%;
+ margin-left: -20%;
   top: 0;
   transform: rotateY(180deg);
   backface-visibility: hidden;
-  /* min-height:200px; */
+
 }
 
 .showResult {
