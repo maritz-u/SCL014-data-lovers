@@ -72,7 +72,23 @@ Fue hecho un prototipo de media fidelidad, con la App **Invision**
 
 Prototipo de alta fidelidad hecho con **Figma** 
 
-![prototipo]()
+![prototipo](./img/testUsuario1.png) 
+![prototipo](./img/testUsuario2.png)
+![prototipo](./img/testUsuario3.png)
+![prototipo](./img/testUsuario4.png)
+![prototipo](./img/testUsuario5.png)
+[link prototipo](https://www.figma.com/file/FNMmn7QMav1PzxJhjvWgf6/Pokemon?node-id=64%3A0)
+
+
+
+##### Teste de Usuario
+
+El prototipo de alta fidelidad fue testado por 5 personas, donde constatamos que:
+
+- la segunda pantalla deberia tener colores más parecidos con la pantalla inicial,
+
+- Mejorar las cartadex(colores, letras)
+
 
 
 ### **6. Feedbacks**  
@@ -87,8 +103,8 @@ En nuestro segundo feedback, hecho con los coaches, percibimos la necesidad de c
 
 
 
-### **7. Conclusión**
-
+### **7. Pagina web Finalizada**
+![test]()
 
 ### Testing
 
