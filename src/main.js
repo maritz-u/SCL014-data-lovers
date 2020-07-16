@@ -37,16 +37,16 @@ const displayPokemon = (pokemonData) => {
   <div id="card" class="card">
     <div id="frente" class="frente">
        <p class="card-title"> ${elem.name.toUpperCase()}</p>
-       <p> Numero: ${elem.num}</p>
-       <p> <img src=" ${elem.img}"> </p>
+       <p class= "headband"> # ${elem.num}</p>
+       <p> <img  class="picture" src=" ${elem.img}"> </p>
     </div>
 
     <div id="reverso" class=" reverso">
        <p> ${elem.about} </p> 
-       <p>${elem.generation.name} </p> 
-       <p> Tipo: ${elem.type} </p>
-       <p> Fortalezas: ${elem.resistant} </p>
-       <p>  Debilidades: ${elem.weaknesses} </p>
+       <p> <strong class= strong>Generación</strong> <br> ${elem.generation.name} </p> 
+       <p> <strong class= strong>Tipo</strong><br>   ${elem.type} </p>
+       <p> <strong class= strong>Fortalezas</strong><br> ${elem.resistant} </p>
+       <p> <strong class= strong> Debilidades</strong><br>  ${elem.weaknesses} </p>
     </div>
   </div>
   </div>
