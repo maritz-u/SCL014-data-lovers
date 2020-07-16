@@ -33,20 +33,22 @@ const displayPokemon = (pokemonData) => {
   const pokeCard = document.getElementById('pokemones');
   pokemonData.forEach((elem) => {
     pokeCard.innerHTML += `
-  <div id="card" class=" card">
+    <div class="card-container">
+  <div id="card" class="card">
     <div id="frente" class="frente">
-       <p> ${elem.name.toUpperCase()}</p>
+       <p class="card-title"> ${elem.name.toUpperCase()}</p>
        <p> Numero: ${elem.num}</p>
        <p> <img src=" ${elem.img}"> </p>
     </div>
 
-    <div id = "reverso" class=" reverso">
+    <div id="reverso" class=" reverso">
        <p> ${elem.about} </p> 
        <p>${elem.generation.name} </p> 
        <p> Tipo: ${elem.type} </p>
        <p> Fortalezas: ${elem.resistant} </p>
        <p>  Debilidades: ${elem.weaknesses} </p>
     </div>
+  </div>
   </div>
 
 `;
