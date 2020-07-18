@@ -32,7 +32,7 @@ Empezamos a planificar todo lo que seria necesario para el desarrollo de la pág
 
  Basado en ideas de las dos colaboradoras, creamos nuestro primer sketch, hecho en papel y lapis.
 
-![imagen-sketch-Fabiane](./src/img/sketch-fabiane.png)
+![imagen-sketch-Fabiane](./src/img/sketch-Fabiane.png)
 
 ![imagen-sketch-Maritzu](./src/img/sketch-maritzu.png)
 
