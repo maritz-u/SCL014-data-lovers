@@ -69,11 +69,11 @@ Fue hecho un prototipo de media fidelidad, con la App **Invision**
 
 Prototipo de alta fidelidad hecho con **Figma** 
 
-![prototipo](./src/img/testUsuario1.png) 
-![prototipo](./src/img/testUsuario2.png)
-![prototipo](./src/img/testUsuario3.png)
-![prototipo](./src/img/testUsuario4.png)
-![prototipo](./src/img/testUsuario5.png)
+![prototipo](./src/img/test-usuario1.png) 
+![prototipo](./src/img/test-usuario2.png)
+![prototipo](./src/img/test-usuario3.png)
+![prototipo](./src/img/test-usuario4.png)
+![prototipo](./src/img/test-usuario5.png)
 [link prototipo](https://www.figma.com/file/FNMmn7QMav1PzxJhjvWgf6/Pokemon?node-id=64%3A0)
 
 
