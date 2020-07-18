@@ -168,9 +168,9 @@ p {
   border-radius: 20px;
 }
 .strong {
-  background-color: #386ccc;
-  color: white;
-  border-radius: 5px;
+
+  color: rgb(4, 112, 235);
+  
 }
 
 .headband {
@@ -203,11 +203,15 @@ p {
   font-size: 25px;
 }
 
+.back p:first-child{
+  color:rgb(105, 102, 102) ;
+}
+
 /* estilo para párrafos de las cartas */
 .card p {
   font-family: Georgia, "Times New Roman", Times, serif;
   padding: 20px 0 0 0;
-  color: #386ccc;
+  color: rgb(105, 102, 102);;
   font-size: 15px;
   text-align: center;
 }
