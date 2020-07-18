@@ -33,30 +33,29 @@ const displayPokemon = (pokemonData) => {
   const pokeCard = document.getElementById('pokemones');
   pokemonData.forEach((elem) => {
     pokeCard.innerHTML += `
-    <div class="card-container">
-  <div id="card" class="card">
-    <div id="frente" class="frente">
-       <p class="card-title"> ${elem.name.toUpperCase()}</p>
-       <p class= "headband"> # ${elem.num}</p>
-       <p> <img  class="picture" src=" ${elem.img}"> </p>
-    </div>
+  <div class="card-container">
+    <div id="card" class="card">
+      <div id="front" class="front">
+         <p class="card-title"> ${elem.name.toUpperCase()}</p>
+         <p class= "headband"> # ${elem.num}</p>
+         <p> <img  class="picture" src=" ${elem.img}"> </p>
+      </div>
 
-    <div id="reverso" class=" reverso">
-       <p> ${elem.about} </p> 
-       <p> <strong class= strong>Generación</strong> <br> ${elem.generation.name} </p> 
-       <p> <strong class= strong>Tipo</strong><br>   ${elem.type} </p>
-       <p> <strong class= strong>Fortalezas</strong><br> ${elem.resistant} </p>
-       <p> <strong class= strong> Debilidades</strong><br>  ${elem.weaknesses} </p>
+      <div id="back" class=" back">
+         <p> ${elem.about} </p> 
+         <p>Generación <br> <strong class= strong> ${elem.generation.name}</strong> </p> 
+         <p>Tipo <br> <strong class= strong>${elem.type} </strong></p>
+         <p>Fortalezas <br> <strong class= strong>${elem.resistant}</strong> </p>
+         <p>Debilidades <br>  <strong class= strong>${elem.weaknesses}</strong> </p>
+      </div>
     </div>
   </div>
-  </div>
-
 `;
   });
 };
 displayPokemon(pokemonList);
 
-// función para filtrar pokemones por generación
+// captura el valor de elección del usuario, e imprime en pantalla
 let searchGeneration;
 const containerGeneration = document.getElementById('generation');
 containerGeneration.addEventListener('change', () => {

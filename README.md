@@ -1,4 +1,4 @@
- ![logo-PokemonLover's](./img/logo-pokemon.png)
+ ![logo-PokemonLover's](./src/img/logo-pokemon.png)
 
 
 ## **[link para PokemonLover's](https://fabianesantos.github.io/SCL014-data-lovers/src/index.html)** 
@@ -22,23 +22,19 @@ En el Proyecto Data Lovers, se pide construir una página web para visualizar un
 
 **PokemonLover's** es una página web donde podrás encontrar todos los pokemones de la generación Kanto y Johto. La página cuenta también con enlaces externos, donde podrás conocer un poco más de la comunidad.
 
-![imagen-página-PokemonLover's]()
-
-![imagen-página-PokemonLover's]()
-
 ### **3. Planificación**
 
 Empezamos a planificar todo lo que seria necesario para el desarrollo de la página web utilizando el Trello, donde nos permitió una mejor visualización de todas las etapas necesarias, y dividimos las tareas por sprint.
 
-![imagen-Trello](./img/imagen-trello.png)
+![imagen-Trello](./src/img/imagen-trello.png)
 
 ### **4. Proceso UX**
 
  Basado en ideas de las dos colaboradoras, creamos nuestro primer sketch, hecho en papel y lapis.
 
-![imagen-sketch-Fabiane](./img/sketch-fabiane.png)
+![imagen-sketch-Fabiane](./src/img/sketch-fabiane.png)
 
-![imagen-sketch-Maritzu](./img/sketch-maritzu.png)
+![imagen-sketch-Maritzu](./src/img/sketch-maritzu.png)
 
 
  ##### Definición de usuario
@@ -53,9 +49,9 @@ Fue realizada una encuesta on line con 33 usuarios, donde los usuarios contestar
  
  [Link encuesta-Pokemon](https://forms.gle/xKj7JESx2EK3oUap8)
 
-![encuesta](./img/encuesta1.png)
-![encuesta](./img/encuesta2.png)
-![encuesta](./img/encuesta3.png)
+![encuesta](./src/img/encuesta1.png)
+![encuesta](./src/img/encuesta2.png)
+![encuesta](./src/img/encuesta3.png)
 
 ##### Historias de Usuarios
 
@@ -69,15 +65,15 @@ Historia de Usuario 3: Yo como jugador principiante quiero poder buscar a los po
 
 Fue hecho un prototipo de media fidelidad, con la App **Invision**
 
-![prototipo-Invision](./img/free-hand-invision.png)
+![prototipo-Invision](./src/img/free-hand-invision.png)
 
 Prototipo de alta fidelidad hecho con **Figma** 
 
-![prototipo](./img/testUsuario1.png) 
-![prototipo](./img/testUsuario2.png)
-![prototipo](./img/testUsuario3.png)
-![prototipo](./img/testUsuario4.png)
-![prototipo](./img/testUsuario5.png)
+![prototipo](./src/img/testUsuario1.png) 
+![prototipo](./src/img/testUsuario2.png)
+![prototipo](./src/img/testUsuario3.png)
+![prototipo](./src/img/testUsuario4.png)
+![prototipo](./src/img/testUsuario5.png)
 [link prototipo](https://www.figma.com/file/FNMmn7QMav1PzxJhjvWgf6/Pokemon?node-id=64%3A0)
 
 
@@ -111,7 +107,7 @@ En nuestro segundo feedback, hecho con los coaches, percibimos la necesidad de c
 
 - Test unitarios
 
-![test](./img/test.png)
+![test](./src/img/test.png)
 
 
 
