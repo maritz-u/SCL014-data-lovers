@@ -27,10 +27,7 @@ body {
 
 .contenedor-menu {
   margin-top: -100px;
-  /* margin-right: auto; */
   float: right;
-  /* width: auto;
-  height: 150px; */
 }
 
 .contenedorimagen {
@@ -39,27 +36,31 @@ body {
 }
 
 .gif {
+  margin-top: 10px;
+  margin-bottom: 20px;
   width: 100%;
 }
 
-.box {
+h3 {
+  margin-top: 30px;
+  font-size: 40px;
+  text-align: center;
+  color: rgb(65, 65, 65);
+}
+.control {
   color: #386ccc;
   background: #fff;
   border-radius: 20px;
   padding: 10px;
-  /* padding-left: 50px;
-  padding-right: 50px; */
   border: 2px #09427a solid;
-  /* display: flex;
-  justify-content: flex-start; */
-  margin: 50px;
 }
+
 ::placeholder {
   color: #386ccc;
   padding: 5px;
 }
 
-#contenedor-filtros {
+aside {
   text-align: center;
 }
 
@@ -109,12 +110,7 @@ h1 {
 p {
   padding: 30px;
   color: rgb(105, 102, 102);
-  font-size: 22px;
-}
-
-aside {
-  /* margin: 25px auto; */
-  text-align: center;
+  font-size: 20px;
 }
 
 .showResult,
@@ -122,75 +118,114 @@ aside {
   display: none;
 }
 
+#contenedorFiltros {
+  margin: 20px 0;
+  text-align: center;
+}
+
+#contenedorPokemones {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 /* caja contenedora de todas las cartas pokemones , con flexbox*/
 .pokemones {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  padding-bottom: 40px;
 }
 
-/* cartas pokemones */
+/* caja contenedora del espacio de cada carta pokemon */
+.card-container {
+  display: grid;
+  perspective: 700px;
+  padding: 10px;
+}
+
+/* caja contenedora de carta pokemon*/
 .card {
-  width: 20%;
-  margin-bottom: 40px;
-  padding: 25px;
-  flex: none;
+  align-items: center;
+  width: 300px;
+  height: 350px;
   position: relative;
-  transition: 0.3s ease all;
-  transform: rotateY(0deg);
+  display: grid;
+  grid-template: 1fr / 1fr;
+  grid-template-areas: "frontAndBack";
   transform-style: preserve-3d;
-  backface-visibility: hidden;
-  height: 250px;
+  transition: all 0.7s ease;
 }
 
-.card > div {
-  background-color: rgb(165, 217, 241);
-  align-items: center;
+.card div {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.picture {
+  padding-top: 30px;
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
   border: 5px white solid;
   border-radius: 20px;
 }
+.strong {
+  color: rgb(4, 112, 235);
+}
 
-/* pseudoclase que cambia el color al hacer click en las cartas */
-.card:hover {
-  background-color: lightpink;
+.headband {
+  background-color: #386ccc;
+  color: white !important;
+  margin-top: 40px;
+  padding-bottom: 20px !important;
+}
+/* caja contenedora de la parte delantera de la carta pokemon*/
+.front {
+  background-image: url(./img/fondoo.png);
+  grid-area: frontAndBack;
+}
+
+/* caja contenedora de la parte trasera de la carta pokemon*/
+.back {
+  background-color: rgb(165, 217, 241);
+  grid-area: frontAndBack;
+  transform: rotateY(-180deg);
+}
+
+.card-container:hover .card {
   transform: rotateY(180deg);
 }
 
 /* pseudoclase que cambia el primer párrafo dentro del div card*/
-.card .frente p:first-child {
+.card .card-title {
+  padding-top: 20px;
   color: #386ccc;
   font-size: 25px;
 }
 
-/* estilo para párrafos de las cartas */
-.card p {
-  padding: 20px 0 0 0;
-  color: #fff;
-  font-size: 15px;
-  text-align: center;
+.back p:first-child {
+  color: rgb(105, 102, 102);
 }
 
-/* las informaciones de la carta quedan ocultas, pero al hacer click se muestra en pantalla */
-.card .reverso {
-  position: absolute;
-  top: 0;
-  transform: rotateY(180deg);
-  backface-visibility: hidden;
-  /* min-height:200px; */
+/* estilo para párrafos de las cartas */
+.card p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 20px 0 0 0;
+  color: rgb(105, 102, 102);
+  font-size: 15px;
+  text-align: center;
 }
 
 .showResult {
   display: none;
 }
 
-.card h2 {
-  text-align: center;
-  margin: 0 500px;
-}
-
 footer {
-  margin: 0px;
+  margin-top: 50px;
   width: 100%;
   background: rgb(127, 248, 202);
   color: rgb(105, 102, 102);
@@ -198,38 +233,37 @@ footer {
   height: 50px;
   position: relative;
   bottom: 0;
-  padding-top: 15px;
+  padding-top: 20px;
 }
 
 /* media query para celulares */
-@media (min-width: 691px) and( max-width: 1024px) {
+@media (max-width: 691px) {
   header,
   #container,
   footer,
   #content {
     width: 100%;
   }
+
+  .control,
   .btn {
-    width: 50%;
+    width: 60%;
     margin: 15px;
+    display: block;
+    margin: 5px auto;
+    padding: 20px 0;
   }
+
   .encabezado img {
     width: 300px;
-    padding: 0px 40px;
-  }
-  .pokebola {
-    display: none;
-  }
-}
-
-/* media query para celulares */
-@media (max-width: 690px) {
-  .encabezado img {
     padding: 0px 20px;
   }
 
   .card {
     flex-direction: column;
-    width: 80%;
+  }
+
+  .contenedor-menu {
+    display: none;
   }
 }
