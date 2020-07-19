@@ -1,26 +1,27 @@
- ![logo-PokemonLover's](./src/img/logo-pokemon.png)
+ ![logo-PokémonLover's](./src/img/logo-pokemon.png)
 
 
-## **[link para PokemonLover's](https://fabianesantos.github.io/SCL014-data-lovers/src/index.html)** 
+## **[Link para PokémonLover's](https://fabianesantos.github.io/SCL014-data-lovers/src/index.html)** 
+
+
 
 
 ## **Índice**
 
 * [1. Resumen del proyecto](#1-resumen-del-proyecto)
-* [2. Resumen del producto](#2-pokemon-resumen-del-producto)
+* [2. Resumen del producto](#2-Pokémon-resumen-del-producto)
 * [3. Planificación](#3-planificacion)
-* [4. Proceso UX](#4-proceso-de-ux)
-* [4. Feedback](#5-feedback)
-* [6. Conclusión](#6-conclusion)
-* [7. Checklist](#7-checklist)
-
+* [4. Proceso UX/ UI](#4-proceso-de-ux)
+* [5. Feedback](#5-feedback)
+* [6. Pagina web Finalizada](#7-checklist)
+* [7. Testing](#7-testing)
 ### **1. Resumen del proyecto**
 
 En el Proyecto Data Lovers, se pide construir una página web para visualizar un set de datos que se adecúe a las necesidades de un potencial usuario.
 
 ### **2. Resumen del producto**
 
-**PokemonLover's** es una página web donde podrás encontrar todos los pokemones de la generación Kanto y Johto. La página cuenta también con enlaces externos, donde podrás conocer un poco más de la comunidad.
+**PokémonLover's** es una página web donde podrás encontrar todos los Pokémones de la generación Kanto y Johto. La página cuenta también con enlaces externos, donde podrás conocer un poco más de la comunidad.
 
 ### **3. Planificación**
 
@@ -28,9 +29,9 @@ Empezamos a planificar todo lo que seria necesario para el desarrollo de la pág
 
 ![imagen-Trello](./src/img/imagen-trello.png)
 
-### **4. Proceso UX**
+### **4. Proceso UX/ UI**
 
- Basado en ideas de las dos colaboradoras, creamos nuestro primer sketch, hecho en papel y lapis.
+ Basado en ideas de las dos colaboradoras, creamos nuestros sketchs, hechos en papel y lapis.
 
 ![imagen-sketch-Fabiane](./src/img/sketch-Fabiane.png)
 
@@ -39,15 +40,15 @@ Empezamos a planificar todo lo que seria necesario para el desarrollo de la pág
 
  ##### Definición de usuario
 
- Desarrollar una página web para jugadores y personas interesadas en conocer más del universo Pokemon. 
+ Desarrollar una página web para jugadores y personas interesadas en conocer más del universo Pokémon. 
 
 
 
 ##### Encuesta On line
 
-Fue realizada una encuesta on line con 33 usuarios, donde los usuarios contestaron algunas preguntas sobre Pokemon, y las seguientes imagenes muestran el resultado:
+Fue realizada una encuesta on line con 33 usuarios, donde los usuarios contestaron algunas preguntas sobre Pokémon, y las seguientes imagenes muestran el resultado:
  
- [Link encuesta-Pokemon](https://forms.gle/xKj7JESx2EK3oUap8)
+ [Link encuesta-Pokémon](https://forms.gle/xKj7JESx2EK3oUap8)
 
 ![encuesta](./src/img/encuesta1.png)
 ![encuesta](./src/img/encuesta2.png)
@@ -55,11 +56,11 @@ Fue realizada una encuesta on line con 33 usuarios, donde los usuarios contestar
 
 ##### Historias de Usuarios
 
-Historia de Usuario 1: Yo como usuario quiero conocer más acerca de la historia de Pokemón ya que nunca he jugado.
+Historia de Usuario 1: Yo como usuario, quiero conocer más acerca de la historia de Pokemón, ya que nunca he jugado.
 
-Historia de Usuario 2: Yo como jugador principiante quiero poder ver todos los pokemones que existen para ver si me falta conocer alguno.
+Historia de Usuario 2: Yo como jugador principiante, quiero poder ver todos los Pokémones que existen, para ver si me falta conocer alguno.
 
-Historia de Usuario 3: Yo como jugador principiante quiero poder buscar a los pokemones de acuerdo a sus fortalezas y debilidades , tipo o generación para saber cual elegir a la hora de jugar.
+Historia de Usuario 3: Yo como jugador principiante, quiero poder buscar a los Pokémones por elemento o generación, para saber cual elegir a la hora de jugar.
 
 ##### Prototipos
 
@@ -74,7 +75,7 @@ Prototipo de alta fidelidad hecho con **Figma**
 ![prototipo](./src/img/test-usuario3.png)
 ![prototipo](./src/img/test-usuario4.png)
 ![prototipo](./src/img/test-usuario5.png)
-[link prototipo](https://www.figma.com/file/FNMmn7QMav1PzxJhjvWgf6/Pokemon?node-id=64%3A0)
+[link prototipo](https://www.figma.com/file/FNMmn7QMav1PzxJhjvWgf6/Pokémon?node-id=64%3A0)
 
 
 
@@ -88,7 +89,7 @@ El prototipo de alta fidelidad fue testado por 5 personas, donde constatamos que
 
 
 
-### **6. Feedbacks**  
+### **5. Feedbacks**  
 
 ##### Feedback de compañeros:
 
@@ -100,10 +101,16 @@ En nuestro segundo feedback, hecho con los coaches, percibimos la necesidad de c
 
 
 
-### **7. Pagina web Finalizada**
+### **6. Pagina web Finalizada**
 
-![]()
-### Testing
+![pagina finalizada inicio](./src/img/pagina-de-inicio.png)
+
+
+![pagina finalizada CartaDex](./src/img/carta-dex.png)
+
+
+### **7. Testing**
+
 
 - Test unitarios
 

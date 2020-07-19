@@ -41,6 +41,12 @@ body {
   width: 100%;
 }
 
+h3 {
+  margin-top: 30px;
+  font-size: 40px;
+  text-align: center;
+  color: rgb(65, 65, 65);
+}
 .control {
   color: #386ccc;
   background: #fff;
@@ -168,9 +174,7 @@ p {
   border-radius: 20px;
 }
 .strong {
-
   color: rgb(4, 112, 235);
-  
 }
 
 .headband {
@@ -203,15 +207,15 @@ p {
   font-size: 25px;
 }
 
-.back p:first-child{
-  color:rgb(105, 102, 102) ;
+.back p:first-child {
+  color: rgb(105, 102, 102);
 }
 
 /* estilo para párrafos de las cartas */
 .card p {
   font-family: Georgia, "Times New Roman", Times, serif;
   padding: 20px 0 0 0;
-  color: rgb(105, 102, 102);;
+  color: rgb(105, 102, 102);
   font-size: 15px;
   text-align: center;
 }
