@@ -44,7 +44,7 @@ const displayPokemon = (pokemonData) => {
       <div id="back" class=" back">
          <p> <strong class= strong>${elem.about}</strong>  </p> 
          <p>Generación <br> <strong class= strong> ${elem.generation.name}</strong> </p> 
-         <p>Tipo <br> <strong class= strong>${elem.type} </strong></p>
+         <p>Elemento <br> <strong class= strong>${elem.type} </strong></p>
          <p>Fortalezas <br> <strong class= strong>${elem.resistant}</strong> </p>
          <p>Debilidades <br>  <strong class= strong>${elem.weaknesses}</strong> </p>
       </div>
