@@ -1,10 +1,22 @@
-import data from './data/pokemon/pokemon.js';
+/* eslint-disable no-use-before-define */
+
 import {
   filterByGeneration,
   filterByType,
   orderByName,
   searchByName,
 } from './data.js';
+
+let pokemonList = [];
+fetch('https://run.mocky.io/v3/72076f16-7d5e-4daa-a080-d86b30ecf72c') // promesa, hace una petición
+  // retorna una respuesta(response), transforma el 'response' en formato json
+  .then(response => response.json())
+  .then((data) => { //  'response.json' = data
+    pokemonList = data.pokemon;
+    displayPokemon(pokemonList);
+  })
+  .catch(error => error);
+
 
 // función que simula el cambio de pantalla
 const move = (close, open) => {
@@ -25,8 +37,16 @@ btnClose.addEventListener('click', () => {
 });
 
 // variable que guarda la data pokemon
-const pokemonList = data.pokemon;
 
+
+const getType = (typeList) => {
+  let pokeType = '';
+  typeList.forEach((type) => {
+    pokeType += `<span class="badge ${type}"> ${type} </span>`;
+  });
+
+  return pokeType;
+};
 /* función para mostrar todos los pokemones, se utiliza innerHTML para imprimir en pantalla y
  Html dinamico, para elegir informaciones desde la data. */
 const displayPokemon = (pokemonData) => {
@@ -34,26 +54,31 @@ const displayPokemon = (pokemonData) => {
   pokemonData.forEach((elem) => {
     pokeCard.innerHTML += `
   <div class="card-container">
-    <div id="card" class="card">
+    <div id="card" class="card" style= "padding: 10px !important">
       <div id="front" class="front">
          <p class="card-title"> ${elem.name.toUpperCase()}</p>
          <p class= "headband"> # ${elem.num}</p>
          <p> <img  class="picture" src=" ${elem.img}"> </p>
+        
       </div>
 
-      <div id="back" class=" back">
+      <div id="back" class="back">
          <p> <strong class= strong>${elem.about}</strong>  </p> 
-         <p>Generación <br> <strong class= strong> ${elem.generation.name}</strong> </p> 
-         <p>Elemento <br> <strong class= strong>${elem.type} </strong></p>
-         <p>Fortalezas <br> <strong class= strong>${elem.resistant}</strong> </p>
-         <p>Debilidades <br>  <strong class= strong>${elem.weaknesses}</strong> </p>
+         <p>Generación</p> 
+         <p>${elem.generation.name}</p>
+         <p>Elemento</p>
+         <p>${getType(elem.type)} </p>
+         <p>Fortalezas</p>
+         <p>${getType(elem.resistant)}</p>
+         <p>Debilidades</p>
+         <p>${getType(elem.weaknesses)} </p>
       </div>
     </div>
   </div>
 `;
   });
 };
-displayPokemon(pokemonList);
+
 
 // captura el valor de elección del usuario, e imprime en pantalla
 let searchGeneration;
@@ -82,17 +107,15 @@ containerOrder.addEventListener('change', () => {
   const closePokemones = document.getElementById('pokemones');
   closePokemones.innerHTML = '';
   searchOrder = containerOrder.value;
-
   orderByName(pokemonList, searchOrder);
   displayPokemon(pokemonList);
 });
 
 let searchPokemon;
-const btnBuscar = document.getElementById('btnBuscar');
-btnBuscar.addEventListener('click', () => {
-  searchPokemon = document.getElementById('box').value;
+const btnBuscar = document.getElementById('box');
+btnBuscar.addEventListener('keyup', () => {
+  searchPokemon = btnBuscar.value.toLowerCase();
   const closePokemones = document.getElementById('pokemones');
   closePokemones.innerHTML = '';
-
   displayPokemon(searchByName(pokemonList, searchPokemon));
 });
