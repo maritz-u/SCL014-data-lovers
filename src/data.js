@@ -1,3 +1,4 @@
+/* eslint-disable arrow-body-style */
 // función para filtar pokemon por generación
 const filterByGeneration = (data, valor) => {
   const filterPokemonByGeneration = data.filter(
@@ -25,10 +26,7 @@ const orderByName = (data, valor) => {
 
 // función para búsqueda por nombre o numero de pokemon
 const searchByName = (data, valor) => {
-  const filterPokemonByName = data.filter(
-    pokemon => pokemon.name === valor.toLowerCase() || pokemon.num === valor,
-  );
-  return filterPokemonByName;
+  return data.filter(pokemon => pokemon.name.includes(valor) || pokemon.num.includes(valor));
 };
 
 export {
