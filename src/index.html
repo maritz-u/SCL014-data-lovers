@@ -1,12 +1,117 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta property="og:image" content="./img/iMac.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="icon" href="./img/pokemon (12) 1.ico">
+  <title>Data Lovers</title>
+</head>
+
+<body>
+  <!-- header es la cabecera del conteiner -->
+  <header class="encabezado">
+    <div class="contenedor-logo">
+      <img src="./img/logo-pokemon.png" alt="Logo-Pokemon">
+ 
+    </div>
+    <div class="contenedor-menu">
+      <a href="https://www.facebook.com/Pok%C3%A9mon-103682847702080/?brand_redir=230809307041021" target="_blank"><img
+          src="./img/logo-facebook.png" class="logo"></a>
+      <a href="https://www.instagram.com/pokemongochileoficial/?hl=pt" target="_blank"><img
+          src="./img/logo-instagram.png" class="logo"></a>
+    </div>
+  </header>
+
+  <div id="container">
+    <!-- section es el contenido del container -->
+    <section id="content">
+
+      <h1>El universo Pokémon</h1>
+      <p>
+        Es uno de los más grandes y populares universos de cuantos se han creado en la historia de los videojuegos.
+        En esta página te entregaremos una guía visible sobre la generación Kanto. Vamos a explicarte qué son los
+        Pokémon y cómo se clasifican.
+        Te mostraremos además todos los que puedes salir a atrapar en este juego para completar la Pokédex.</p>
+
+      <div class="contenedorimagen">
+        <img src="./img/imagen-pokemon.png" class="gif" alt="Imagen-Pokemones">
+
+
+
+      </div>
+      <!-- aside es una caja, contiene los botones-->
+      <aside>
+
+        <button id="btn" class="btn">CartaDex</button>
+       
+
+        <a class="btn" href="https://www.wikidex.net/wiki/Foro:Index" target="_blank">Foro</a>
+
+      </aside>
+    </section>
+  </div>
+
+  <!-- segunda pantalla -->
+  <div id="showResult" class="showResult">
+
+    <h3>¡ Encuentra tu Pokémon !</h3>
+
+    <div id="contenedorFiltros">
+
+      <select id="generation" class="control">
+        <option value="all"> Pokémon por Generación</option>
+        <option value="kanto">Kanto</option>
+        <option value="johto"> Johto</option>
+      </select>
+
+      <select id="tipo" class="control">
+        <option value="all">Pokémon por elemento</option>
+        <option value="Water">Agua</option>
+        <option value="Bug">Bicho</option>
+        <option value="Dragon">Dragón</option>
+        <option value="Electric">Eléctrico</option>
+        <option value="Ghost">Fantasma</option>
+        <option value="Fire">Fuego</option>
+        <option value="Ice">Hielo</option>
+        <option value="Fighting">Lucha</option>
+        <option value="Normal">Normal</option>
+        <option value="Grass">Planta</option>
+        <option value="Psychic">Psíquico</option>
+        <option value="Rock">Roca</option>
+        <option value="Ground">Tierra</option>
+        <option value="Poison">Veneno</option>
+        <option value="Flying">Volador</option>
+      </select>
+
+      <select id="order" class="control">
+        <option value="all">Ordenar Pokémon</option>
+        <option value="A-Z">A-Z</option>
+        <option value="Z-A">Z-A</option>
+      </select>
+
+      <!-- Buscar por nombre o numero de pokemon -->
+
+      <input type="search" autocomplete="on" placeholder=" Nombre o número" id="box" class="control">
+   
+      <button id="btnCerrar" class="btn btnCerrar">Volver</button>
+    </div>
+    <div id="contenedorPokemones" >
+      <div id="pokemones" class="pokemones"></div>
+    </div>
+  </div>
+
+  <!-- pie de pagina, final del container(div) -->
+  <footer>
+    &copy;2020 Desarrollado por Maritzu Zuñiga y Fabiane Santos
+  </footer>
+
+  <script src="main.js" type="module"></script>
+
+</body>
+
 </html>

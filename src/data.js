@@ -1,5 +1,34 @@
-// estas funciones son de ejemplo
+/* eslint-disable arrow-body-style */
+// función para filtar pokemon por generación
+const filterByGeneration = (data, valor) => {
+  const filterPokemonByGeneration = data.filter(
+    pokemon => pokemon.generation.name === valor,
+  );
+  return filterPokemonByGeneration;
+};
 
-export const example = () => 'example';
+// función para filtrar pokemon por tipo
+const filterByType = (data, valor) => {
+  const filterPokemonByType = data.filter(
+    pokemon => pokemon.type.indexOf(valor.toLowerCase()) > -1,
+  );
+  return filterPokemonByType;
+};
 
-export const anotherExample = () => 'OMG';
+// función para ordenar pokemon de A-Z y Z-A
+const orderByName = (data, valor) => {
+  if (valor === 'A-Z') {
+    data.sort((a, b) => a.name.localeCompare(b.name));
+  } else {
+    data.sort((a, b) => b.name.localeCompare(a.name));
+  }
+};
+
+// función para búsqueda por nombre o numero de pokemon
+const searchByName = (data, valor) => {
+  return data.filter(pokemon => pokemon.name.includes(valor) || pokemon.num.includes(valor));
+};
+
+export {
+  filterByGeneration, filterByType, orderByName, searchByName,
+};
